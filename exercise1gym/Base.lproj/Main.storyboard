@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,66 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="exercise1gym" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apl-hm-W9C">
+                                <rect key="frame" x="118" y="30" width="84" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="kRu-zQ-Wtf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhB-bc-Ds8">
+                                <rect key="frame" x="132" y="182.5" width="56" height="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tqT-9F-Xp5">
+                                <rect key="frame" x="107" y="71.5" width="106" height="105.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="4Ei-Jm-qfV"/>
+                                    <constraint firstAttribute="height" constant="106.33" id="IIW-Vs-I73"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3y-ZN-IGC">
+                                <rect key="frame" x="145" y="206.5" width="30.5" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.97254902119999997" green="0.92156863209999995" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="R3y-ZN-IGC" firstAttribute="top" secondItem="xhB-bc-Ds8" secondAttribute="bottom" constant="2" id="0A9-4p-NiM"/>
+                            <constraint firstItem="xhB-bc-Ds8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0RP-3l-4DI"/>
+                            <constraint firstItem="R3y-ZN-IGC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7ND-mF-5Bo"/>
+                            <constraint firstItem="tqT-9F-Xp5" firstAttribute="top" secondItem="Apl-hm-W9C" secondAttribute="bottom" constant="8" id="DeE-O1-i84"/>
+                            <constraint firstItem="tqT-9F-Xp5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="djE-yR-ax5"/>
+                            <constraint firstItem="Apl-hm-W9C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="glG-Mv-4xW"/>
+                            <constraint firstItem="xhB-bc-Ds8" firstAttribute="top" secondItem="tqT-9F-Xp5" secondAttribute="bottom" constant="5" id="lL9-7Z-GUp"/>
+                            <constraint firstItem="Apl-hm-W9C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w83-77-4fT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="tqT-9F-Xp5" id="777-YM-NLe"/>
+                        <outlet property="imageWidth" destination="4Ei-Jm-qfV" id="zh7-6X-Fc6"/>
+                        <outlet property="useremail" destination="R3y-ZN-IGC" id="q9W-Sx-xDy"/>
+                        <outlet property="username" destination="xhB-bc-Ds8" id="HHT-sO-Rkj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="5.343511450381679" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pencil.circle" catalog="system" width="128" height="123"/>
+    </resources>
 </document>
