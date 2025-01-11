@@ -58,6 +58,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageHeight" destination="IIW-Vs-I73" id="LPo-f5-afU"/>
                         <outlet property="imageView" destination="tqT-9F-Xp5" id="777-YM-NLe"/>
                         <outlet property="imageWidth" destination="4Ei-Jm-qfV" id="zh7-6X-Fc6"/>
                         <outlet property="useremail" destination="R3y-ZN-IGC" id="q9W-Sx-xDy"/>
